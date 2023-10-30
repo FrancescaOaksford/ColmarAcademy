@@ -14,8 +14,20 @@ header{
 }
 
 nav{
-	display: flex;
-	justify-content: flex-end;
+
+}
+
+ul{
+	display: inline-flex;
+}
+
+li{
+	list-style-type: none;
+	padding: .5rem;
+}
+
+li a{
+	text-decoration: none;
 }
 
 .logo{
