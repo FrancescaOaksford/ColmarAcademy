@@ -27,6 +27,10 @@ a{
 	font-size: 1.125rem;
 }
 
+img{
+	display: block;
+}
+
 h1{
 	font-size: 2rem;
 }
@@ -51,6 +55,10 @@ p{
 	display: flex;
 }
 
+.hero img{
+	width: 60%;
+}
+
 .main-content{
 
 }
@@ -59,7 +67,15 @@ p{
 
 }
 
+.info-card img{
+	width: 35%;
+}
+
 .course-card{
+
+}
+
+.course-card img{
 
 }
 
