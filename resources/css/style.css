@@ -9,8 +9,9 @@ body {
 
 header{
 	display: inline-flex;
-	background-color: #fefefe;
-	color: #000;
+	background-color: #3f3f3f;
+	color: #fff;
+	width: 100%;
 }
 
 nav{
@@ -28,6 +29,7 @@ li{
 
 li a{
 	text-decoration: none;
+	color: #fff;
 }
 
 .logo{
@@ -65,18 +67,42 @@ p{
 
 .hero{
 	display: flex;
+	background-color: #f7f7f7;
+	color: #3f3f3f;
+	padding: 2rem;
 }
 
 .hero img{
 	width: 60%;
+	height: auto;
 }
 
 .main-content{
+	margin: 1.5rem;
+}
 
+.info{
+	display: flex;
+	background-color: #f7f7f7;
+	color: #3f3f3f;
+	padding: 2rem;
+}
+
+.info img{
+	width: 60%;
+	height: auto;
 }
 
 .info-card{
+	display: flex;
+	background-color: #9b9b9b;
+	width: 40%;
+	height: auto;
+}
 
+.card-content{
+	color: #3f3f3f;
+	display: block;
 }
 
 .info-card img{
@@ -84,7 +110,7 @@ p{
 }
 
 .course-card{
-
+	
 }
 
 .course-card img{
@@ -97,6 +123,8 @@ p{
 
 .courses{
 	display: flex;
+	background-color: #f7f7f7;
+	color: #3f3f3f;
 }
 
 .thesis{
