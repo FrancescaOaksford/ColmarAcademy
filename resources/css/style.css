@@ -12,19 +12,25 @@ header{
 	background-color: #3f3f3f;
 	color: #fff;
 	width: 100%;
+	position: fixed;
 }
 
 nav{
-
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
 }
 
 ul{
 	display: inline-flex;
 }
 
-li{
+nav li{
 	list-style-type: none;
 	padding: .5rem;
+	display: inline-flex;
+	padding: 0px 10px;
 }
 
 li a{
@@ -34,11 +40,24 @@ li a{
 
 .logo{
 	height: 2rem;
+	width: auto;
+	margin: 10px;
+	display: inline-flex;
 }
 
 a{
 	color: #000;
 	font-size: 1.125rem;
+}
+
+button{
+	background-color: #375EEA;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: .75rem 1.5rem;
+	border-radius: 2rem;
+	border: none;
 }
 
 img{
@@ -69,7 +88,9 @@ p{
 	display: flex;
 	background-color: #f7f7f7;
 	color: #3f3f3f;
-	padding: 2rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 2rem 0rem 2rem
 }
 
 .hero img{
@@ -110,21 +131,22 @@ p{
 }
 
 .course-card{
-	
+	background-color: #375EEA;
+	color: #fff;
 }
 
 .course-card img{
 
 }
 
-.information{
-	display: flex;
-}
 
 .courses{
 	display: flex;
 	background-color: #f7f7f7;
 	color: #3f3f3f;
+	flex-basis: 1000px;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .thesis{
