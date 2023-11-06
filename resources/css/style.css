@@ -13,6 +13,7 @@ header{
 	color: #fff;
 	width: 100%;
 	position: fixed;
+	padding: .25rem;
 }
 
 nav{
@@ -43,14 +44,16 @@ li a{
 
 .logo{
 	height: 2rem;
-	width: auto;
 	margin: 10px;
 	display: inline-flex;
+	font-size: 3rem;
+	font-weight: 800;
 }
 
 a{
-	color: #000;
+	color: #375EEA;
 	font-size: 1.125rem;
+	font-weight: 700;
 }
 
 button{
@@ -101,10 +104,11 @@ p{
 	justify-content: center;
 	align-items: center;
 	margin: 0rem 2rem 0rem 2rem
+	width: 100%;
 }
 
 .hero img{
-	width: 100%;
+	flex-basis: 40rem;
 	height: auto;
 }
 
@@ -113,37 +117,40 @@ p{
 }
 
 .info{
-	display: flex;
+	display: inline-flex;
 	align-content: flex-start;
 	background-color: #f7f7f7;
 	color: #3f3f3f;
 	padding: 2rem;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .info img{
-	width: 60%;
+
 }
 
 .secondary-content{
 	display: flex;
 	flex-direction: column;
+	width: 60%;
 }
 
 .info-card{
 	display: flex;
 	background-color: #CCD7FF;
-	width: 40%;
-	height: auto;
+	margin: 1rem;
 }
 
 .card-content{
-	color: #fff;
+	color: #000;
 	display: block;
 	padding: .15rem 1.5rem 1.5rem 1.5rem;
 }
 
 .info-card img{
-	width: 35%;
+	flex-basis: 10rem;
+	height: auto;
 }
 
 .section-title{
@@ -158,8 +165,7 @@ p{
 }
 
 .course-card{
-	background-color: #375EEA;
-	color: #fff;
+	background-color: #fff;
 	margin: 1.5rem;
 	flex-basis: 24rem;
 }
@@ -168,19 +174,45 @@ p{
 	width: 100%;
 }
 
-
 .courses{
 	display: block;
-	background-color: #f7f7f7;
-	color: #3f3f3f;
+	background-color: #CCD7FF;
 	justify-content: center;
+	width: 100%;
 }
 
 .thesis{
+	display: block;
+	width: 100%;
+	margin: 2rem;
+}
+
+.thesis-content {
 	display: flex;
 }
 
+.video-section{
+	display: block;
+}
+
+.stack-cards{
+	display: flex;
+	flex-basis: 24rem;
+	flex-flow: column wrap;
+}
+
 footer{
-	background-color: #fefefe
+	background-color: #fefefe;
 	color: #000;
+	display: flex;
+	margin: .25rem;
+	width: 100%;
+	margin: 2rem;
+}
+
+footer li{
+	list-style-type: none;
+	padding: .5rem;
+	display: inline-flex;
+	padding: 0px 10px;
 }
