@@ -13,7 +13,8 @@ header{
 	color: #fff;
 	width: 100%;
 	position: fixed;
-	padding: .25rem;
+	z-index: 100;
+	align-items: center;
 }
 
 nav{
@@ -21,7 +22,7 @@ nav{
 	justify-content: flex-end;
 	align-items: center;
 	width: 100%;
-	margin: .25rem;
+	margin: .25rem 2rem;
 }
 
 ul{
@@ -44,10 +45,19 @@ li a{
 
 .logo{
 	height: 2rem;
-	margin: 10px;
 	display: inline-flex;
-	font-size: 3rem;
-	font-weight: 800;
+	align-items: center;
+	padding: 0px 10px;
+	margin: 1rem;
+	width: 100%;
+	color:#fff;
+	font-size: 2.5rem;
+	font-weight: 300;
+	font-variant-caps: all-small-caps;
+}
+
+.logo img{
+	width: 3.25rem;
 }
 
 a{
@@ -73,6 +83,8 @@ button:hover{
 
 img{
 	display: block;
+	width: 100%;
+	height: auto;
 }
 
 h1{
@@ -87,73 +99,93 @@ h2{
 
 h3{
 	font-size: 1.75rem;
+	color:#01071f;
 }
 
 h4{
 	font-size: 1.5rem;
+	color:#01071f;
 }
 
 p{
 	font-size: 1rem;
 }
 
-.hero{
-	display: flex;
-	background-color: #f7f7f7;
-	color: #3f3f3f;
-	justify-content: center;
-	align-items: center;
-	margin: 0rem 2rem 0rem 2rem
+/* Hero Section */
+
+.contentHero{
+	position: relative;
+	top: 4rem;
+	display: inline-flex;
+	margin: 2rem;
+	background-color:#bbc9ff;
 	width: 100%;
+	justify-content: center;
 }
 
-.hero img{
-	flex-basis: 40rem;
+.contentHeroLeft{
+	width: 60%;
 	height: auto;
 }
 
-.main-content{
-	margin: 1.5rem;
+.contentHeroRight{
+	padding: 3rem;
 }
 
-.info{
+.contentCopy{
+	padding: .25rem;
+}
+
+/* Information Section */
+
+.contentInfo{
 	display: inline-flex;
-	align-content: flex-start;
-	background-color: #f7f7f7;
-	color: #3f3f3f;
-	padding: 2rem;
+	margin: 2rem;
+	justify-content: center;
+}
+
+.contentInfo img{
 	width: 100%;
-	flex-wrap: wrap;
 }
 
-.info img{
-
+.contentInfoLeft{
+	width: 60%;
+	margin: 2rem 0rem 2rem 0rem;
 }
 
-.secondary-content{
+.contentInfoRight{
 	display: flex;
 	flex-direction: column;
-	width: 60%;
-}
-
-.info-card{
-	display: flex;
-	background-color: #CCD7FF;
 	margin: 1rem;
 }
 
-.card-content{
-	color: #000;
+.infoCard{
+	display: flex;
+	background-color: #bbc9ff;
+	margin: 1rem;
+}
+
+.cardContent{
+	color: #01071f;
 	display: block;
 	padding: .15rem 1.5rem 1.5rem 1.5rem;
 }
 
-.info-card img{
-	flex-basis: 10rem;
+.infoCard img{
+	flex-basis: 5rem;
 	height: auto;
 }
 
-.section-title{
+/* Course Section */
+
+.courseContent{
+	display: block;
+	background-color:#bbc9ff;
+	justify-content: center;
+	width: 100%;
+	padding: 2rem;
+}
+.sectionTitle{
 	text-align: center;
 	padding: .5rem;
 }
@@ -164,46 +196,56 @@ p{
 	justify-content: center;
 }
 
-.course-card{
+.courseCard{
 	background-color: #fff;
 	margin: 1.5rem;
 	flex-basis: 24rem;
+	border-radius: 1rem;
 }
 
-.course-card img{
+.courseCard img{
 	width: 100%;
+	border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.courses{
+/* Thesis Section */
+
+.contentThesis{
 	display: block;
-	background-color: #CCD7FF;
-	justify-content: center;
-	width: 100%;
-}
-
-.thesis{
-	display: block;
-	width: 100%;
 	margin: 2rem;
 }
 
-.thesis-content {
+.contentMainThesis{
+	display: inline-flex;
+}
+
+.contentThesisLeft{
 	display: flex;
+	width: 60%;
+	margin: 2rem 0rem 2rem 0rem;
 }
 
-.video-section{
-	display: block;
-}
-
-.stack-cards{
+.contentThesisRight{
 	display: flex;
 	flex-basis: 24rem;
 	flex-flow: column wrap;
 }
 
+.thesisCard{
+	display: flex;
+	background-color: #bbc9ff;
+	margin: 1rem;
+	width: 100%;
+}
+
+.thesisCard img{
+	flex-basis: 8rem;
+	height: auto;
+}
+
 footer{
 	background-color: #fefefe;
-	color: #000;
+	color: #01071f;
 	display: flex;
 	margin: .25rem;
 	width: 100%;
