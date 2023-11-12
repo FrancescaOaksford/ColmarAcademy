@@ -59,6 +59,10 @@ p{
 	font-size: 1rem;
 }
 
+#light-heading{
+	color: #fff;
+}
+
 
 /* Header */
 
@@ -140,7 +144,7 @@ li a{
 }
 
 .contentCopy{
-	padding: 4rem;
+	padding: 2rem;
 	display: block;
 }
 
@@ -149,30 +153,32 @@ li a{
 
 .contentInfo{
 	display: inline-flex;
-	margin: 2rem;
+	padding: 1.5rem;
 	justify-content: center;
-}
-
-.contentInfo img{
-	width: 100%;
+	background-color: #375EEA;
 }
 
 .contentInfoLeft{
+	display: block;
 	width: 60%;
-	margin: 2rem 0rem 2rem 0rem;
+}
+
+.contentInfoLeft img{
+	width: 100%;
+	height: auto;
 }
 
 .contentInfoRight{
 	display: flex;
 	flex-direction: column;
-	margin: 1rem;
+	margin: 0rem 1rem;
 }
 
 .infoCard{
 	display: flex;
-	align-content: center;
-	background-color: #dee4ff;
-	margin: 1rem;
+	align-items: center;
+	background-color: #fff;
+	margin: 0rem 1rem 1rem 1rem;
 }
 
 .cardContent{
@@ -182,8 +188,9 @@ li a{
 }
 
 .infoCard img{
-	flex-basis: 5rem;
+	width: 35%;
 	height: auto;
+	padding: 1rem;
 }
 
 /* Course Section */
@@ -235,22 +242,29 @@ li a{
 	margin: 2rem 0rem 2rem 0rem;
 }
 
+.contentThesisLeft img{
+	width: 100%;
+	height: auto;
+}
+
 .contentThesisRight{
 	display: flex;
-	flex-basis: 24rem;
-	flex-flow: column wrap;
+	flex-direction: column;
+	margin: 1rem;
 }
 
 .thesisCard{
 	display: flex;
-	background-color: #dee4ff;
+	align-items: center;
+	background-color: #375EEA;
 	margin: 1rem;
 	width: 100%;
 }
 
 .thesisCard img{
-	flex-basis: 8rem;
+	width: 35%;
 	height: auto;
+	padding: 1rem;
 }
 
 footer{
