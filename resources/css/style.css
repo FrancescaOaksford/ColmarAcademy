@@ -1,11 +1,66 @@
 body {
 	background-color: #fff;
-	color: #000;
-	font-family: 'Roboto', sans-serif;
+	color: #01071f;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	display: block;
 	margin: 0;
+	max-width: 100%;
 }
+
+a{
+	color: #375EEA;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+button{
+	background-color: #375EEA;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem 2rem;
+	border-radius: 3rem;
+	border: none;
+}
+
+button:hover{
+	background-color: #4B73FF;
+	color: #E3E9FF;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	max-height: auto;
+}
+
+h1{
+	font-size: 2.5rem;
+	color: #375EEA;
+}
+
+h2{
+	font-size: 2rem;
+	color: #375EEA;
+}
+
+h3{
+	font-size: 1.75rem;
+	color:#01071f;
+}
+
+h4{
+	font-size: 1.5rem;
+	color:#01071f;
+}
+
+p{
+	font-size: 1rem;
+}
+
+
+/* Header */
 
 header{
 	display: inline-flex;
@@ -60,81 +115,35 @@ li a{
 	width: 3.25rem;
 }
 
-a{
-	color: #375EEA;
-	font-size: 1.125rem;
-	font-weight: 700;
-}
-
-button{
-	background-color: #375EEA;
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 600;
-	padding: 1rem 2rem;
-	border-radius: 3rem;
-	border: none;
-}
-
-button:hover{
-	background-color: #4B73FF;
-	color: #E3E9FF;
-}
-
-img{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-h1{
-	font-size: 2.5rem;
-	color: #375EEA;
-}
-
-h2{
-	font-size: 2rem;
-	color: #375EEA;
-}
-
-h3{
-	font-size: 1.75rem;
-	color:#01071f;
-}
-
-h4{
-	font-size: 1.5rem;
-	color:#01071f;
-}
-
-p{
-	font-size: 1rem;
-}
-
 /* Hero Section */
 
 .contentHero{
-	position: relative;
-	top: 4rem;
 	display: inline-flex;
-	margin: 2rem;
-	background-color:#bbc9ff;
+	align-content: center;
+	margin-top: 4rem;
+	background-color:#f3ffbb;
 	width: 100%;
-	justify-content: center;
+	padding: 1.5rem;
 }
 
 .contentHeroLeft{
-	width: 60%;
-	height: auto;
+	overflow: hidden;
+	height: 100%;
 }
 
 .contentHeroRight{
-	padding: 3rem;
+	display: flex;
+	padding: 0rem 2rem;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .contentCopy{
-	padding: .25rem;
+	padding: 4rem;
+	display: block;
 }
+
 
 /* Information Section */
 
@@ -161,7 +170,8 @@ p{
 
 .infoCard{
 	display: flex;
-	background-color: #bbc9ff;
+	align-content: center;
+	background-color: #dee4ff;
 	margin: 1rem;
 }
 
@@ -180,10 +190,10 @@ p{
 
 .courseContent{
 	display: block;
-	background-color:#bbc9ff;
+	background-color:#f3ffbb;
 	justify-content: center;
 	width: 100%;
-	padding: 2rem;
+	padding-bottom: 2rem;
 }
 .sectionTitle{
 	text-align: center;
@@ -233,7 +243,7 @@ p{
 
 .thesisCard{
 	display: flex;
-	background-color: #bbc9ff;
+	background-color: #dee4ff;
 	margin: 1rem;
 	width: 100%;
 }
