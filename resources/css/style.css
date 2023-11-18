@@ -1,3 +1,4 @@
+html,
 body {
 	background-color: #fff;
 	color: #01071f;
@@ -63,6 +64,12 @@ p{
 	color: #fff;
 }
 
+#icon{
+	color: #fff;
+	height: 2.5rem;
+	margin: .75rem;
+}
+
 
 /* Header */
 
@@ -80,8 +87,6 @@ nav{
 	display: inline-flex;
 	justify-content: flex-end;
 	align-items: center;
-	width: 100%;
-	margin: .25rem 2rem;
 }
 
 ul{
@@ -90,9 +95,8 @@ ul{
 
 nav li{
 	list-style-type: none;
-	padding: .5rem;
 	display: inline-flex;
-	padding: 0px 10px;
+	align-items: center;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -103,12 +107,11 @@ li a{
 }
 
 .logo{
-	height: 2rem;
+	width: 2.5rem;
 	display: inline-flex;
 	align-items: center;
 	padding: 0px 10px;
 	margin: 1rem;
-	width: 100%;
 	color:#fff;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -281,4 +284,114 @@ footer li{
 	padding: .5rem;
 	display: inline-flex;
 	padding: 0px 10px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px){
+
+	header{
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	h1{
+		font-size: 2rem;
+	}
+	
+	h2{
+		font-size: 1.75rem;
+	}
+	
+	h3{
+		font-size: 1.5rem;
+	}
+	
+	h4{
+		font-size: 1.25rem;
+	}
+
+	#nav-text{
+		display: none;
+	}
+
+	/* Mobile Hero */
+
+	.contentHero{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+	}
+
+	.contentHeroLeft{
+		overflow: hidden;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.contentHeroRight{
+		display: flex;
+		padding: 0rem 1rem;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.contentCopy{
+		padding: 1rem 1rem 2rem 1rem;
+		display: block;
+	}
+
+	/* Mobile Info */
+
+	.contentInfo{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+	}
+
+	.contentInfoLeft{
+		display: none;
+	}
+	
+	.contentInfoRight{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.infoCard{
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		margin: .5rem;
+	}
+
+	/* Mobile Thesis */
+
+	.contentMainThesis{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.contentThesisLeft{
+		display: flex;
+		width: 60%;
+		margin: 2rem 0rem 2rem 0rem;
+	}
+	
+	.contentThesisLeft img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.contentThesisRight{
+		display: none;
+	}
+
+
+
 }
