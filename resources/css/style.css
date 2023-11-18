@@ -64,12 +64,6 @@ p{
 	color: #fff;
 }
 
-#icon{
-	color: #fff;
-	height: 2.5rem;
-	margin: .75rem;
-}
-
 
 /* Header */
 
@@ -81,12 +75,12 @@ header{
 	position: fixed;
 	z-index: 100;
 	align-items: center;
+	padding: 0rem 2rem 0rem 2rem;
 }
 
 nav{
-	display: inline-flex;
+	display: flex;
 	justify-content: flex-end;
-	align-items: center;
 }
 
 ul{
@@ -97,29 +91,31 @@ nav li{
 	list-style-type: none;
 	display: inline-flex;
 	align-items: center;
-	font-weight: 700;
-	letter-spacing: 1px;
+	padding: 0rem 1rem 0rem 1rem;
+	width: 100%;
 }
 
 li a{
 	text-decoration: none;
 	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .logo{
-	width: 2.5rem;
-	display: inline-flex;
 	align-items: center;
-	padding: 0px 10px;
-	margin: 1rem;
-	color:#fff;
-	font-size: 2.5rem;
-	font-weight: 300;
-	font-variant-caps: all-small-caps;
+	display: inline-flex;
 }
 
 .logo img{
 	width: 3.25rem;
+}
+
+.logo-text{
+	color:#fff;
+	font-size: 2.5rem;
+	font-weight: 300;
+	font-variant-caps: all-small-caps;
 }
 
 /* Hero Section */
@@ -288,8 +284,17 @@ footer li{
 
 /* Mobile */
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 601px){
+	ul.icons-section{
+		display: none;
+	}
+}
 
+@media only screen and (max-width: 600px){
+	body{
+		display: block;
+	}
+	
 	header{
 		margin-top: 0;
 		padding-top: 0;
@@ -309,6 +314,16 @@ footer li{
 	
 	h4{
 		font-size: 1.25rem;
+	}
+
+	#icon{
+		color: #fff;
+		height: 2.5rem;
+		margin: .75rem;
+	}
+
+	ul.icons-section{
+		display: inline-flex;
 	}
 
 	#nav-text{
@@ -332,23 +347,29 @@ footer li{
 	
 	.contentHeroRight{
 		display: flex;
-		padding: 0rem 1rem;
+		padding: 0rem;
 		justify-content: center;
 		align-items: center;
 	}
 	
+	.contentHeroCopy{
+		padding: 2.5rem;
+		display: block;
+	}
+
 	.contentCopy{
 		padding: 1rem 1rem 2rem 1rem;
 		display: block;
 	}
 
-	/* Mobile Info */
+	/* Mobile Information */
 
 	.contentInfo{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		margin: 0;
+		padding: 0;
 	}
 
 	.contentInfoLeft{
@@ -358,17 +379,59 @@ footer li{
 	.contentInfoRight{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		margin: 0;
+		padding: 0;
 		width: 100%;
 	}
 	
 	.infoCard{
 		display: flex;
 		align-items: center;
+		flex-direction: column;
 		background-color: #fff;
-		margin: .5rem;
+		margin: 1rem;
 	}
 
+	.infoCard img{
+		overflow: hidden;
+		width: 100%;
+		padding: 0rem;
+	}
+
+	.cardContent{
+		padding: .5;
+		margin: .5;
+	}
+
+	/* Courses */
+
+	#courseImage{
+		display: none;
+	}
+
+	.cardContent{
+		padding: 1.25rem;
+		margin: 0;
+	}
+
+	.courseContent{
+		padding: 0;
+	}
+	
+	.cards{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.courseCard{
+		background-color: #fff;
+		margin: .5rem;
+		flex-basis: 90%;
+		border-radius: .125rem;
+	}
+	
+	
 	/* Mobile Thesis */
 
 	.contentMainThesis{
@@ -376,11 +439,15 @@ footer li{
 		flex-direction: column;
 		width: 100%;
 	}
+
+	.sectionTitle{
+		padding: 0;
+	}
 	
 	.contentThesisLeft{
 		display: flex;
-		width: 60%;
-		margin: 2rem 0rem 2rem 0rem;
+		width: 100%;
+		margin: .5rem;
 	}
 	
 	.contentThesisLeft img{
@@ -389,6 +456,10 @@ footer li{
 	}
 	
 	.contentThesisRight{
+		display: none;
+	}
+
+	.contentCopy{
 		display: none;
 	}
 
