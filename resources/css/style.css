@@ -64,11 +64,19 @@ p{
 	color: #fff;
 }
 
+#icon{
+	width: 2rem;
+	background-color: #fff;
+	padding: .5rem;
+	margin: 0rem 1rem;
+	border-radius: 4rem;
+}
+
 
 /* Header */
 
 header{
-	display: inline-flex;
+	display: flex;
 	background-color: #375EEA;
 	color: #fff;
 	width: 100%;
@@ -282,13 +290,15 @@ footer li{
 	padding: 0px 10px;
 }
 
-/* Mobile */
-
 @media only screen and (min-width: 601px){
-	ul.icons-section{
+	#icon{
 		display: none;
 	}
 }
+
+
+
+/* Mobile */
 
 @media only screen and (max-width: 600px){
 	body{
@@ -314,16 +324,13 @@ footer li{
 	
 	h4{
 		font-size: 1.25rem;
+		margin: .5rem 0rem;
 	}
 
 	#icon{
 		color: #fff;
 		height: 2.5rem;
 		margin: .75rem;
-	}
-
-	ul.icons-section{
-		display: inline-flex;
 	}
 
 	#nav-text{
@@ -402,16 +409,18 @@ footer li{
 	.cardContent{
 		padding: .5;
 		margin: .5;
+		display: block;
+		text-align: left;
 	}
 
-	/* Courses */
+	/* Mobile Courses */
 
 	#courseImage{
 		display: none;
 	}
 
 	.cardContent{
-		padding: 1.25rem;
+		padding: .5rem 1.25rem 1.25rem 1.25rem;
 		margin: 0;
 	}
 
