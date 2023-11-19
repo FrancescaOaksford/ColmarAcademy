@@ -60,6 +60,12 @@ p{
 	font-size: 1rem;
 }
 
+#logo-text{
+	font-size: 2rem;
+	font-variant: small-caps;
+	letter-spacing: .1rem;
+}
+
 #light-heading{
 	color: #fff;
 }
@@ -77,30 +83,32 @@ p{
 
 header{
 	display: flex;
+	align-items: center;
 	background-color: #375EEA;
 	color: #fff;
 	width: 100%;
 	position: fixed;
 	z-index: 100;
-	align-items: center;
-	padding: 0rem 2rem 0rem 2rem;
 }
 
 nav{
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	padding: .5rem 1rem;
+}
+
+ul{
 	display: flex;
 	justify-content: flex-end;
 }
 
-ul{
-	display: inline-flex;
-}
-
 nav li{
 	list-style-type: none;
-	display: inline-flex;
+	display: inline-block;
 	align-items: center;
-	padding: 0rem 1rem 0rem 1rem;
-	width: 100%;
+	margin: 0rem .75rem;
 }
 
 li a{
@@ -111,12 +119,14 @@ li a{
 }
 
 .logo{
-	align-items: center;
 	display: inline-flex;
+	align-items: center;
+	height: 2rem;
 }
 
 .logo img{
-	width: 3.25rem;
+	width: 3rem;
+	height: 3rem;
 }
 
 .logo-text{
@@ -301,13 +311,8 @@ footer li{
 /* Mobile */
 
 @media only screen and (max-width: 600px){
-	body{
-		display: block;
-	}
-	
 	header{
-		margin-top: 0;
-		padding-top: 0;
+		top: 0;
 	}
 
 	h1{
@@ -325,6 +330,14 @@ footer li{
 	h4{
 		font-size: 1.25rem;
 		margin: .5rem 0rem;
+	}
+
+	nav{
+		padding: 0rem .5rem;
+	}
+
+	#logo-text{
+		display: none;
 	}
 
 	#icon{
