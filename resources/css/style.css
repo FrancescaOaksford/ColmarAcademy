@@ -350,6 +350,10 @@ footer li{
 		display: none;
 	}
 
+	#for-companies{
+		display:none;
+	}
+
 	/* Mobile Hero */
 
 	.contentHero{
@@ -433,12 +437,12 @@ footer li{
 	}
 
 	.cardContent{
-		padding: .5rem 1.25rem 1.25rem 1.25rem;
+		padding: 1.25rem 1.25rem 1.25rem 1.25rem;
 		margin: 0;
 	}
 
 	.courseContent{
-		padding: 0;
+		padding-top: 1rem;
 	}
 	
 	.cards{
@@ -450,7 +454,11 @@ footer li{
 		background-color: #fff;
 		margin: .5rem;
 		flex-basis: 90%;
-		border-radius: .125rem;
+		border-radius: 1rem;
+	}
+
+	.course-description{
+		display: none;
 	}
 	
 	
